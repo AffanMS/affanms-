@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Personal Web - Affan</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Personal Web - Nama Kamu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        /* Foto profil */
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #333;
+            background-image: url('Affan.jpg'); /* ganti dengan nama file fotomu */
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+        }
+        /* Info pribadi */
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        /* Sosial media */
+        .social-icons {
+            margin-top: 25px;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+            background: #333;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            background: #555;
+        }
+    </style>
 </head>
 <body>
-  <main class="page">
-    <header class="site-header">
-      <h1 class="title">Nama Kamu</h1>
-      <p class="subtitle">NIM: 102022400276 · Fakultas Rekayasa Industri · Sistem Informasi</p>
-    </header>
+    <div class="container">
+        <!-- Foto Profil -->
+        <div class="profile-pic"></div>
 
-    <section class="card">
-      <div class="profile">
-        <!-- Cara paling mudah: pakai <img>. Ganti src dengan nama file fotomu -->
-        <img src="Affan.JPG" alt="Foto Profil" class="profile-img" />
-      </div>
-
-      <div class="about">
-        <h2>Halo 👋</h2>
-        <p>Saya mahasiswa Program Studi Sistem Informasi. Ini adalah halaman personal sederhana untuk tugas.</p>
-
-        <div class="social">
-          <!-- Semua link dibuka di tab baru (target="_blank") seperti diminta -->
-          <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <!-- Tambah atau hapus sesuai kebutuhan -->
+        <!-- Informasi -->
+        <div class="info">
+            <p><b>Nama Kamu</b></p>
+            <p>NIM: 123456789</p>
+            <p>Fakultas Ilmu Komputer</p>
+            <p>Program Studi: Informatika</p>
         </div>
-      </div>
-    </section>
 
-    <footer class="site-footer">
-      <small>© <span id="thisYear"></span> Nama Kamu — Fakultas Rekayasa Industri</small>
-    </footer>
-  </main>
-
-  <script>
-    // otomatis isi tahun di footer
-    document.getElementById('thisYear').textContent = new Date().getFullYear();
-  </script>
+        <!-- Sosial Media -->
+        <div class="social-icons">
+            <a href="https://instagram.com/affmns_" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com/username" target="_blank">Facebook</a>
+        </div>
+    </div>
 </body>
 </html>
