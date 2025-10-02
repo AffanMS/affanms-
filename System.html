@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Web - Nama Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <h1 class="title">Nama Kamu</h1>
+      <p class="subtitle">NIM: 102022400276 · Fakultas Rekayasa Industri · Sistem Informasi</p>
+    </header>
+
+    <section class="card">
+      <div class="profile">
+        <!-- Cara paling mudah: pakai <img>. Ganti src dengan nama file fotomu -->
+        <img src="Affan.JPG" alt="Foto Profil" class="profile-img" />
+      </div>
+
+      <div class="about">
+        <h2>Halo 👋</h2>
+        <p>Saya mahasiswa Program Studi Sistem Informasi. Ini adalah halaman personal sederhana untuk tugas.</p>
+
+        <div class="social">
+          <!-- Semua link dibuka di tab baru (target="_blank") seperti diminta -->
+          <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <!-- Tambah atau hapus sesuai kebutuhan -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>© <span id="thisYear"></span> Nama Kamu — Fakultas Rekayasa Industri</small>
+    </footer>
+  </main>
+
+  <script>
+    // otomatis isi tahun di footer
+    document.getElementById('thisYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
